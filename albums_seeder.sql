@@ -1,5 +1,7 @@
 USE codeup_test_db;
 
+TRUNCATE albums;
+
 INSERT INTO albums (artist, name, release_date, sales, genre)
 VALUES ("Michael Jackson", "Thriller", "1982", "51.2", "Pop, post-disco, funk, rock"),
 ("AC/DC", "Back in Black", "1980", "30.1", "Hard rock"),
@@ -33,4 +35,5 @@ VALUES ("Michael Jackson", "Thriller", "1982", "51.2", "Pop, post-disco, funk, r
 ("The Beatles", "Abbey Road", "1969", "16.9", "Rock"),
 ("Nirvana", "Nevermind", "1991", "17.8", "Grunge, alternative rock");
 
-select * from albums;
+SELECT *
+FROM albums;

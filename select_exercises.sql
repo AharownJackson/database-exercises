@@ -23,12 +23,3 @@ WHERE sales >= 20.0;
 SELECT name
 FROM albums
 WHERE genre = 'Rock';
-
-
-
-
-
-
-# SELECT column1, column2, ...
-# FROM table_name
-# WHERE column_name = 'value';
