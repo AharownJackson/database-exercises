@@ -1,14 +1,14 @@
 USE codeup_test_db;
 
 SELECT name
-AS "These are the albums in the database."
+AS "These are the albums in the table."
 FROM albums;
 
 UPDATE albums
 SET sales = sales * 10;
 
 SELECT name, sales
-AS "These are the albums in the database, after the sales have been doubled."
+AS "These are the albums in the table, after the sales have been multipled by 10."
 FROM albums;
 
 SELECT name, release_date
@@ -28,13 +28,13 @@ WHERE release_date = 1800;
 SELECT name, artist
 AS "These are the albums by the artist Michael Jackson"
 FROM albums
-WHERE artist = "Michael Jackson";
+WHERE artist = 'Michael Jackson';
 
 UPDATE albums
-SET artist = "Peter Jackson"
-WHERE artist = "Michael Jackson";
+SET artist = 'Peter Jackson'
+WHERE artist = 'Michael Jackson';
 
 SELECT name, artist
 AS "These are the albums where the artist Michael Jackson was switched to Peter Jackson"
 FROM albums
-WHERE artist = "Peter Jackson";
+WHERE artist = 'Peter Jackson';

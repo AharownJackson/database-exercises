@@ -14,7 +14,9 @@ WHERE name = 'Rumours';
 
 SELECT name
 FROM albums
-WHERE release_date >= 1990 && albums.release_date <= 1999;
+WHERE release_date
+BETWEEN 1990
+AND 1999;
 
 SELECT name
 FROM albums
@@ -22,4 +24,5 @@ WHERE sales >= 20.0;
 
 SELECT name
 FROM albums
-WHERE genre = 'Rock';
+WHERE genre
+LIKE '%rock%';
