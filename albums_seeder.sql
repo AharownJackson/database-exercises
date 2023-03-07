@@ -37,3 +37,6 @@ VALUES ("Michael Jackson", "Thriller", "1982", "51.2", "Pop, post-disco, funk, r
 
 SELECT *
 FROM albums;
+
+# INSERT INTO albums (artist, name, release_date, sales, genre)
+# VALUES ("Nirvana", "Nevermind", "1991", "17.8", "Grunge, alternative rock");

@@ -9,7 +9,8 @@ CREATE TABLE albums (
     release_date INT UNSIGNED,
     sales FLOAT(6, 2),
     genre VARCHAR(128),
-    primary key (id)
+    primary key (id),
+    UNIQUE (artist, name)
 );
 
 SHOW DATABASES;
